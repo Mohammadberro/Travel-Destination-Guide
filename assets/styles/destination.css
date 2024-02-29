@@ -1,0 +1,119 @@
+.page {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	margin: 0px;
+	background-color: rgba(0, 0, 0, 0.06);
+	a {
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.header {
+		background-image: url("./../images/header.png");
+		background-size: 100% 126px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 106px;
+		padding: 10px 20px;
+		.logo-holder {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 80px;
+			aspect-ratio: 1;
+			.logo {
+				height: 80px;
+				aspect-ratio: 1;
+			}
+		}
+		.title {
+			cursor: default;
+			font-size: 50px;
+			font-weight: bold;
+			color: rgba(255, 255, 255, 0.8);
+		}
+		.profile {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 7px;
+			.profile-picture-holder {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 50px;
+				aspect-ratio: 1;
+				border-radius: 50%;
+				.profile-picture {
+					height: 50px;
+					border-radius: 50%;
+					aspect-ratio: 1;
+				}
+			}
+			.name {
+				color: rgba(255, 255, 255, 0.75);
+			}
+		}
+	}	
+    .body{
+		padding: 20px 40px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+		align-items: center;
+		.title{
+			padding-bottom: 20px;
+			font-weight: bold;
+			font-size: 50px;
+		}
+		.images{
+			display: flex;
+			justify-content: space-between;
+			width: calc(100vw - 80px);
+			.image{
+				width: 300px;
+				aspect-ratio: 9/16;
+			}
+		}
+		.description{
+			text-align: justify;
+			font-size: 20px;
+		}
+    }
+    .footer {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(6, 28, 10, 0.4);
+		.contact-us{
+			display:flex;
+			gap: 10px;
+			flex-direction: column;
+			align-items: center;
+			font-size: 32px;
+			font-weight: bold;
+			.contact-us-icons{
+				display: flex;
+				gap: 40px;
+				justify-content: center;
+				align-items: center;
+				.contact-us-icon{
+					height: 40px;
+					aspect-ratio: 1;
+				}
+			}
+		}
+	}
+	@media (max-width: 1200px) {
+		.hero {
+			.hero-image-holder {
+				.hero-image {
+					display: none;
+				}
+			}
+		}
+	}
+}
